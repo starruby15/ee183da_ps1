@@ -63,15 +63,15 @@ This will run policy and value iteration and display the initial pi and the fina
 
 5(a). Exploring values: shown in results folder.
 
-low error, high discount (original) => robot aims for +10 
+(0.01, 0.9) (original) => robot aims for +10 
 
-low error, low discount => robot goes for either +1 or +10, but also freezes when there is a high danger zone next to it 
+(0.01, 0.1) => robot goes for either +1 or +10, but also freezes when there is a high danger zone next to it 
 
-high error, low discount => robot goes for either +1 or +10, but also freezes when there is a high danger zone next to it 
+(0.3, 0.1) => robot goes for either +1 or +10, but also freezes when there is a high danger zone next to it. This one is slightly different because the robot has freezes almost everywhere except to +10.
 
-low error, low discount => robot goes for either +1 or +10, but also freezes when there is a high danger zone next to it. This one is slightly different because the robot has freezes almost everywhere except to +10.
+(0.1, 0.3) => robot goes for either +1 or +10, but also freezes when there is a high danger zone next to it. In this one the robot is willing to move down and left for +10 but still freezes 4/6 times. 
 
-high error, high discount => robot aims for +10, but does freeze when between obstacle and high danger zone 
+(0.4, 0.9) => robot aims for +10, but does freeze when between obstacle and high danger zone 
 
 
 
