@@ -44,20 +44,28 @@ This will run policy and value iteration and display the initial pi and the fina
 3(d).  Function returns pi under one-step lookahead: policy_onestep_lookahead(values,pi)
 
 3(e).  Function that computes policy iteration: policy_iteration() 
+       Photo of optimal can be found in 3g.jpg (it just has the trajectory with it too). 
 
 3(f).  Compute time: approximately 0.689s 
        This was done by using python timer functions
 
 3(g).  Plot trajectory: shown in 3g.jpg under results folder  
+       Expected discounted sum of rewards: 4.7 
+       Total discounted sum of rewards: 48.7
+       The difference comes from how expected using errors while total doesn't
 
 ### 2.4 Value Iteration 
 
 4(a). Value iteration function: value_iteration()
 
-4(b). Comparing results: shown in 4b.jg under results folder 
+4(b). Comparing results: results of value iteration shown in 4b.jg under results folder 
+      As can be compared between 3g and 4b, the results are the same 
 
 4(c). Compute time: approximately 0.545s
       This was done by using python timer functions
+      While on average the policy took slightly longer, in the end they were about the same run time.
+      This is not surprisingly as policy uses more functions so there might be more latency from that; however 
+      complexitiy wise they are about the same so they don't vary by much
 
 ### 2.5 Additional scenarios 
 
