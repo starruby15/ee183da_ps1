@@ -1,1 +1,3 @@
-Answers: 
+The code was developed in Google Collab.  
+
+Google collab runs python code in code blocks and it does this sequentially.  Meaning the number that appears after hitting the play button indicates the place of that code block in the sequence of runs.  This also means that if a function is run in a code block and the number 5 appears, but there is a previous code block that calls it and the number 3 appears, the previous code block will throw an error because the function was defined/run before it.  All of my code runs in order from top to bottom.  This means if the code is opened in Google Collab on Google Drive, please go down and run the code blocks one by one until hitting the bottom. 
